@@ -1,0 +1,17 @@
+/* miniprogram/pages/index/index.wxss */
+.swiper{padding: 20rpx;width:100%;height:340rpx;box-sizing: border-box;margin-top:80rpx;}
+.swiper .swiper-item{ width:100%;border-radius: 20rpx;height:100%;overflow: hidden;}
+.swiper .swiper-item image{ width:100%; border-radius: 20rpx;height:100%;overflow: hidden;}
+
+.narbar{display: flex;height:100rpx;margin-bottom: 20rpx;}
+.narbar view{flex:1;text-align: center;line-height: 100rpx;}
+.active{border-bottom: 1px solid red;color: red;}
+
+.list{display: flex;flex-wrap: wrap;font-size: 40rpx;color: skyblue;}
+.list .list-item{width:50%;height:450rpx;}
+.list .list-item image{width:90%;height: 360rpx ;display: block;margin:0 auto;}
+.list .list-text-message{line-height: 90rpx;}
+.list .list-text-message .link{color: red;font-size: 
+  40rpx;}
+.list .list-text-name{display: block;width:45%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;font-size: 28rpx;line-height: 90rpx;}
+.list .list-text{display: flex;justify-content: space-between;width:90%;margin:0 auto;}

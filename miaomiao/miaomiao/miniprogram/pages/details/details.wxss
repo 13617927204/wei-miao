@@ -1,0 +1,6 @@
+/* miniprogram/pages/details/details.wxss */
+.users-list{margin:20rpx 0 0 0;font-size: 14px;padding:0 20rpx;color: #bfbfbf;}
+.users-list-item{padding:0 20rpx;height:60rpx;line-height: 60rpx;border-bottom: 2rpx solid skyblue;}
+.users-list-item_img{padding:0 20rpx;height:100rpx;border-bottom: 2rpx solid skyblue;display: flex;align-items: center;}
+.users-list-item_img image{width:60rpx;height:60rpx;border-radius: 50%;}
+.margin-right{margin-right: 20rpx;}

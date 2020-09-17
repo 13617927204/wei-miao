@@ -1,0 +1,2 @@
+/* miniprogram/pages/user/personalDetails/nickname/nickname.wxss */
+input{padding: 10rpx 20rpx;width:100%;height:100rpx;border: 2rpx solid skyblue;}

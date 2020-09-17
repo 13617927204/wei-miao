@@ -1,0 +1,9 @@
+<!--components/removeList/removeList.wxml-->
+<!-- <text>components/removeList/removeList.wxml</text> -->
+    <movable-area class="item-area">
+      <movable-view direction="all" class="item-view" bindtap="handleAgree">{{userMessage.username}}</movable-view>
+      <navigator url="{{'../../pages/details/details?userId=' +messageId }}">
+        <image src="{{userMessage.userPhoto}}"></image>
+      </navigator>
+      <view bindtap="handleRemove">删除</view>
+    </movable-area>

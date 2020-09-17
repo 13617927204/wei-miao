@@ -1,0 +1,23 @@
+<!--miniprogram/pages/user/user.wxml-->
+<!-- <text>miniprogram/pages/user/user.wxml</text> -->
+<view class="users">
+  <view  class="users-info">
+    <image src="{{userPhoto}}"></image>
+    <view wx:if="{{isShow}}">欢迎您：{{username}}</view>
+    <button disabled="{{disabled}}" wx:else open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+  </view>
+  <view class="users-list">
+    <navigator url="./personalDetails/personalDetails" class="users-list-item">
+      <text>编辑个人信息</text>
+      <text class="iconfont icon-ic_arrowr-copy"></text>
+    </navigator>
+    <navigator url="./friend_list/friend_list" class="users-list-item">
+      <text>查看好友列表</text>
+      <text class="iconfont icon-ic_arrowr-copy"></text>
+    </navigator>
+    <navigator url="{{'../details/details?userId='+userId}}" class="users-list-item">
+      <text>个人主页</text>
+      <text class="iconfont icon-ic_arrowr-copy"></text>
+    </navigator>
+  </view>
+</view> 

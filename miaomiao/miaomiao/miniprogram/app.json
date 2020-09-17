@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/nearby/nearby",
+    "pages/message/message",
+    "pages/user/user",
+    "pages/user/personalDetails/personalDetails",
+    "pages/user/friend_list/friend_list",
+    "pages/user/homepage/homepage",
+    "pages/user/personalDetails/head/head",
+    "pages/user/personalDetails/nickname/nickname",
+    "pages/user/personalDetails/presonalize/presonalize",
+    "pages/user/personalDetails/location/location",
+    "pages/user/personalDetails/phone/phone",
+    "pages/user/personalDetails/weixin/weixin",
+    "pages/details/details"
+  ],
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/tabbar/首页.png",
+        "selectedIconPath": "./images/tabbar/首页_active.png"
+      },
+      {
+        "pagePath": "pages/nearby/nearby",
+        "text": "附近",
+        "iconPath": "./images/tabbar/附近.png",
+        "selectedIconPath": "./images/tabbar/附近_active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "./images/tabbar/消息.png",
+        "selectedIconPath": "./images/tabbar/消息_active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "./images/tabbar/我的.png",
+        "selectedIconPath": "./images/tabbar/我的_active.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "喵喵交友",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

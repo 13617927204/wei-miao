@@ -1,0 +1,29 @@
+<!--miniprogram/pages/index/index.wxml-->
+<!-- <text>miniprogram/pages/index/index.wxml</text> -->
+<!-- <view class="iconfont icon-shouye"></view> -->
+<!-- // 导入定义的wxs方法 -->
+<wxs src="../deploy/linkUpdate.wxs" module="msg" />
+<view>
+<search/>
+  <swiper class="swiper" autoplay="true">
+    <swiper-item  class="swiper-item" wx:for="{{swiper}}" wx:key="index">
+      <image src="{{item}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="narbar">
+  <view class="{{choice == 'link' ? 'active' : ''}}" bindtap="handleNarbar" data-choice="link">推荐</view>
+  <view class="{{choice == 'time' ? 'active' : ''}}" bindtap="handleNarbar" data-choice="time">最新</view>
+</view>
+<view class="list">
+  <view class="list-item" wx:for="{{datalist}}" wx:key="index">
+    <image src="{{item.userPhoto}}" bindtap="handleDetails" id="{{item._id}}"></image>
+    <view class="list-text">
+      <text class="list-text-name">{{item.username}}</text>
+      <view class="list-text-message" >
+        <text data-index="{{index}}" class=" {{item.isLink? 'iconfont icon-dianzan link': 'iconfont icon-dianzan2'}}" id="{{item._id}}" bindtap="handleLink"></text>
+        <text>{{msg.linkUpdate(item.link)}}</text>
+      </view>
+    </view>
+  </view>
+</view>

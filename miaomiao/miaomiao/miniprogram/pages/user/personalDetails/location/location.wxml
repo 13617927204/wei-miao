@@ -1,0 +1,6 @@
+<!--miniprogram/pages/user/personalDetails/location/location.wxml-->
+<!-- <text>miniprogram/pages/user/personalDetails/location/location.wxml</text> -->
+<view>
+  <text>开启定位服务: </text>
+   <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>
+</view>

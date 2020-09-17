@@ -1,0 +1,37 @@
+<!--miniprogram/pages/details/details.wxml-->
+<!-- <text>miniprogram/pages/details/details.wxml</text> -->
+<block wx:if="{{!isMe}}">
+  <button wx:if="{{isFirend}}">已是好友</button>
+  <button wx:else bindtap="handleAdd" id="{{data._id}}">添加好友</button>
+</block>
+<view class="users-list">
+    <view  class="users-list-item">
+      <text>用户名：</text>
+      <text>{{data.username}}</text>
+    </view>
+    <view  class="users-list-item_img">
+      <text>头像：</text>
+      <!-- <text>{{data.userPhoto}}</text> -->
+      <image src="{{data.userPhoto}}"></image>
+    </view>
+    <view  class="users-list-item">
+      <text>个性签名：</text>
+      <text>{{data.signature}}</text>
+    </view>
+    <view  class="users-list-item">
+      <text>手机号：</text>
+      <block wx:if="{{isFirend}}">
+        <text class="margin-right">{{data.phoneNumber}}</text>
+        <coll-photo wx:if="{{data.phoneNumber}}" text="{{data.phoneNumber}}" />
+      </block>
+       <text wx:else>仅好友可见</text>
+    </view>
+    <view  class="users-list-item">
+      <text>微信号：</text>
+       <block wx:if="{{isFirend}}">
+        <text class="margin-right">{{data.weixinNumber}}</text>
+        <copy-weixin wx:if="{{data.weixinNumber}}" text="{{data.weixinNumber}}" />
+      </block>
+     <text wx:else>仅好友可见</text>
+    </view>
+  </view>

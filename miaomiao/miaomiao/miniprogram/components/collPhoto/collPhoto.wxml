@@ -1,0 +1,3 @@
+<!--components/collPhoto/collPhoto.wxml-->
+<!-- <text>components/collPhoto/collPhoto.wxml</text> -->
+<text bindtap="handlecall" class="iconfont icon-dadianhua"></text>

@@ -1,0 +1,11 @@
+var linkUpdate=function(link){
+  if(link>=100000){
+    link = (link/10000).toFixed(1)+ "w"
+  }else if(link>=1000){
+    link = (link/1000).toFixed(1) + 'k'
+  }
+  return link
+}
+module.exports = {
+  linkUpdate:linkUpdate
+}

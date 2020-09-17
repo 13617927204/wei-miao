@@ -1,0 +1,6 @@
+<!--miniprogram/pages/user/personalDetails/phone/phone.wxml-->
+<!-- <text>miniprogram/pages/user/personalDetails/phone/phone.wxml</text> -->
+<form bindsubmit="submit">
+  <input name="phone" value="{{value}}" focus="{{true}}"></input> 
+  <button  form-type="submit">修改</button>
+</form>

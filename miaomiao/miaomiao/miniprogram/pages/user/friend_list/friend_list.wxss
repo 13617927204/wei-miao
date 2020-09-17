@@ -1,0 +1,6 @@
+/* miniprogram/pages/index/friend_list/friend_list.wxss */
+.head{height: 60rpx;margin-left: 30rpx;line-height: 60rpx;}
+.firend-list{padding: 0 40rpx;}
+.firend-list image{width:80rpx;height:80rpx;margin-right: 10rpx;border-radius: 50%;}
+.firend-item{display: flex;justify-content:space-between;align-items: center;margin:10rpx 0;height:100rpx}
+.firend-item .firend-item-text{display: flex;align-items: center;}

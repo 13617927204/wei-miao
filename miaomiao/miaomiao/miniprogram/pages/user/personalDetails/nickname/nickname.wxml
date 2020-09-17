@@ -1,0 +1,7 @@
+<!--miniprogram/pages/user/personalDetails/nickname/nickname.wxml-->
+<!-- <text>miniprogram/pages/user/personalDetails/nickname/nickname.wxml</text> -->
+<form bindsubmit="submit">
+  <input name="nickname" value="{{value}}" focus="{{true}}"></input> 
+  <button  form-type="submit">自定义修改</button>
+  <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">使用微信昵称</button>
+</form>

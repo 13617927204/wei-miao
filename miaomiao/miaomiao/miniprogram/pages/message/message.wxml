@@ -1,0 +1,9 @@
+<!--miniprogram/pages/message/message.wxml-->
+<!-- <text>miniprogram/pages/message/message.wxml</text> -->
+<view wx:if="{{isLogin}}">
+  <view wx:if="{{isShow}}">暂无消息</view>
+  <view class="list" wx:else> 
+    <view>消息列表</view>
+    <remove-list wx:for="{{dataArr}}" wx:key="index" messageId="{{item}}" bindmyremove="handleMyremove"/>
+  </view>
+</view>

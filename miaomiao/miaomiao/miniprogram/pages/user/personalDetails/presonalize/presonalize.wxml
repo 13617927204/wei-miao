@@ -1,0 +1,7 @@
+<!--miniprogram/pages/user/personalDetails/presonalize/presonalize.wxml-->
+<!-- <text>miniprogram/pages/user/personalDetails/presonalize/presonalize.wxml</text> -->
+
+<form bindsubmit="submit">
+  <textarea name="presonalize" value="{{value}}" focus="{{true}}"></textarea> 
+  <button  form-type="submit">发布</button>
+</form>

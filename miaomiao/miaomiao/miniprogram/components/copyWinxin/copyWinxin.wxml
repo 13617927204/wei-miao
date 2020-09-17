@@ -1,0 +1,3 @@
+<!--components/copyWinxin/copyWinxin.wxml-->
+<!-- <text>components/copyWinxin/copyWinxin.wxml</text> -->
+<text bindtap="handleCopy" class="iconfont icon-fuzhi"></text>

@@ -1,0 +1,28 @@
+<!--miniprogram/pages/index/personalDetails/personalDetails.wxml-->
+<!-- <text>miniprogram/pages/index/personalDetails/personalDetails.wxml</text> -->
+<view class="users-list">
+    <navigator url="./head/head" class="users-list-item">
+      <text>修改头像</text>
+      <text class="iconfont icon-ic_arrowr-copy"></text>
+    </navigator>
+    <navigator url="./nickname/nickname" class="users-list-item">
+      <text>修改昵称</text>
+      <text class="iconfont icon-ic_arrowr-copy"></text>
+    </navigator>
+    <navigator url="./presonalize/presonalize" class="users-list-item">
+      <text>修改个性签名</text>
+      <text class="iconfont icon-ic_arrowr-copy"></text>
+    </navigator>
+    <navigator url="./location/location" class="users-list-item">
+      <text>共享位置</text>
+      <text class="iconfont icon-ic_arrowr-copy"></text>
+    </navigator>
+    <navigator url="./phone/phone" class="users-list-item">
+      <text>设置手机号</text>
+      <text class="iconfont icon-ic_arrowr-copy"></text>
+    </navigator>
+    <navigator url="./weixin/weixin" class="users-list-item">
+      <text>设置微信号</text>
+      <text class="iconfont icon-ic_arrowr-copy"></text>
+    </navigator>
+</view>

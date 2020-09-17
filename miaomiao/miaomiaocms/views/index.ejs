@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/axios.js"></script>
+  </head>
+  <body>
+    <h1>喵喵CMS后台管理系统</h1>
+    <!-- <p>EJS Welcome to <%= title %></p> -->
+    <div>
+      上传文件：<input id="fileImg" type="file">
+    </div>
+  </body>
+  <script>
+    window.onload = function(){
+      var input = document.getElementById("fileImg");
+      input.onchange = function(ev){
+        var file = ev.target.files[0]
+        var param = new FormData()
+        console.log(file)
+        param.append('file', file, file.name)
+        var config = {
+          headers: {
+            'Content-Type': 'multipart/form-data'
+          }
+        };
+        axios.post("/uploadBannerImg", param, config).then(res=>{
+          console.log(res.data)
+        })
+      }
+    }
+
+  </script>
+</html>

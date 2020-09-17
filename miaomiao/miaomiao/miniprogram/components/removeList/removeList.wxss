@@ -1,0 +1,7 @@
+/* components/removeList/removeList.wxss */
+
+.item-area{width:100%;height: 100rpx;position: relative;border-bottom: 2rpx solid grey;padding: 10rpx 0;}
+.item-area image{width:100rpx;height:100rpx;border-radius: 50%;position: absolute;left: 0;top: 0;}
+.item-area view{position: absolute;right: 2rpx;top: 2rpx;width:100rpx;height:98rpx;text-align: center;line-height: 100rpx;background: red;}
+.item-view{width:calc(100% - 100rpx);background: white;height: 100rpx;position: absolute;
+        left: 100rpx;top: 0;z-index: 3;}

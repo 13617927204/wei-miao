@@ -1,0 +1,3 @@
+/* miniprogram/pages/message/message.wxss */
+.list{padding: 10rpx 30rpx;width:calc(100% - 60rpx);}
+.list view{margin-bottom: 30rpx;}

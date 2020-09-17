@@ -1,0 +1,7 @@
+/* miniprogram/pages/user/user.wxss */
+.users-info{height:150rpx;display: flex;align-items: center;border-bottom: 2rpx solid skyblue;border-top: 2rpx solid skyblue;padding:0 20rpx;margin-top: 20rpx;}
+.users-info image{width:100rpx;height:100rpx;margin-right: 10rpx;}
+.users-info button{margin: 0;width:100rpx;color: skyblue;} 
+
+.users-list{margin:20rpx 0 0 0;font-size: 14px;padding:0 20rpx;color: #bfbfbf;}
+.users-list-item{display: flex;justify-content:space-between;padding:0 20rpx;height:60rpx;line-height: 60rpx;border-bottom: 2rpx solid skyblue;}

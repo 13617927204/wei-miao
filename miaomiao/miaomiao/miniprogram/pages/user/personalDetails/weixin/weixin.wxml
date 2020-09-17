@@ -1,0 +1,6 @@
+<!--miniprogram/pages/user/personalDetails/weixin/weixin.wxml-->
+<form bindsubmit="submit">
+  <input name="weixin" value="{{value}}" focus="{{true}}"></input> 
+  <button  form-type="submit">修改</button>
+</form>
+
